@@ -1,0 +1,11 @@
+<div class="exide-date-picker">
+  <input type="number" max="31" placeholder="DD" [(ngModel)]="day" class="day" (keyup)="checkDay($event)" #edpDay (blur)="checkDigits('day')"
+    (keydown.tab)="checkDigits('day')" [ngClass]="{'error-field' : checkError(edpDay.value, 'day')}" (keydown)="outputData()">
+  <div class="seperator">-</div>
+  <input type="number" [max]="12" placeholder="MM" [(ngModel)]="month" class="month" (keyup)="checkMonth($event)" #edpMonth
+    (blur)="checkDigits('month')" (keydown.tab)="checkDigits('month')" [ngClass]="{'error-field' : checkError(edpMonth.value, 'month')}"
+    (keydown)="outputData()">
+  <div class="seperator">-</div>
+  <input type="number" max="3000" placeholder="YYYY" [(ngModel)]="year" class="year" (keyup)="checkYear($event)" #edpYear (blur)="checkDigits('year')"
+    [ngClass]="{'error-field' : checkError(edpYear.value, 'year')}" #edpYear (keydown)="outputData()">
+</div>

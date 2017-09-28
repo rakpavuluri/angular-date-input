@@ -1,0 +1,52 @@
+.exide-date-picker {
+    width: 100%;
+    .month {
+        width: 35px;
+        float: left;
+    }
+    .day {
+        width: 35px;
+        float: left;
+    }
+    .year {
+        width: 70px;
+    }
+    input {
+        font-weight: 300;
+        color: #000;
+        border-color: transparent;
+        border-radius: 0px;
+        border-bottom-color: #ccc;
+        padding: 0px;
+        outline: none;
+        box-shadow: none;
+        border-radius: 0px;
+        border-color: transparent;
+        border-bottom: 1px solid #D7DADD;
+        width: 100%;
+        text-align: center;
+        height: 33px;
+        font-size: 16px;
+    }
+    .seperator {
+        margin: 0 10px;
+        float: left;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    /* For Firefox */
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
+    /* Webkit browsers like Safari and Chrome */
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.error-field {
+    border-bottom-color: #ED1C24 !important;
+}
